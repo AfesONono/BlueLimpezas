@@ -1,0 +1,416 @@
+/* Podem ser usados: 
+font-family: 'Noto Sans Symbols 2', sans-serif; */
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+/* TOPO */
+body {
+  font-family: "Inter Tight", sans-serif;
+  font-family: "PT serif", serif;
+  color: black;
+  margin: 0px;
+}
+/* Títulos */
+h1,
+h2,
+h3 {
+  font-family: Asap, sans-serif;
+  color: rgba(13, 12, 12, 0.989);
+  text-align: center;
+}
+/* Imagens */
+img {
+  border-radius: 0;
+}
+
+/* Navegação (MENUS) */
+nav {
+  background-color: rgba(4, 196, 249, 0.732);
+}
+nav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav div > a {
+  text-decoration: none;
+  color: white;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  margin-top: 17px;
+}
+nav div ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+nav div ul li {
+  text-align: center;
+  width: 100%;
+}
+nav div ul li a {
+  display: inline-block;
+  width: 100%;
+  padding: 9.5px 0;
+  text-decoration: none;
+  color: rgb(0, 0, 129);
+}
+
+nav div ul li a:hover {
+  color: rgb(167, 15, 214);
+  background-color: white;
+}
+
+/* Formatar o menu Suspenso -  */
+nav div ul li ul {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+nav div ul li:hover ul {
+  display: flex;
+}
+
+nav div ul li ul li {
+  /* border: 1px solid black; */
+  font-style: italic;
+  background-color: rgba(4, 196, 249, 0.992);
+  z-index: 1;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/limpezalocal-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 50px;
+}
+header p {
+  margin-bottom: 2em;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.827);
+  color: rgb(232, 232, 232);
+}
+header a {
+  color: rgb(0, 225, 255);
+  text-decoration: none;
+  background-color: rgba(8, 0, 254, 0.59);
+  padding: 10px 20px;
+  font-size: 0.9em;
+  border-radius: 20px;
+  box-shadow: 2.9px 0px 2px black;
+}
+header a:hover {
+  color: rgb(12, 238, 200);
+  box-shadow: none;
+  background-color: rgba(0, 0, 255, 0.913);
+  transition: background 0.6s;
+}
+
+/* SEÇÕES */
+/* # = ID ---- . = CLASS */
+/* SOBRE */
+section#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+  background-color: rgba(4, 196, 249, 0.732);
+  color: rgb(255, 255, 255);
+}
+section#sobre h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5em;
+}
+section#sobre p {
+  margin-bottom: 2em;
+  max-width: 1000px;
+}
+
+section#sobre a {
+  color: rgb(4, 196, 249, 0.732);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 0.9px 0px 10px black;
+}
+section#sobre a:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: none;
+  background-color: rgb(0, 0, 255);
+  transition: background 0.6s;
+}
+
+/* SERVIÇOS */
+section#servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  text-align: justify;
+  margin-top: 30px;
+}
+
+section#servicos div {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+/* Produtos */
+section#produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+section#produtos h2 {
+  margin-bottom: 20px;
+}
+section#produtos img {
+  width: 100%;
+  padding: 10px 0 0 0px;
+}
+/* CONTATO */
+section#contato {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+section#contato h2 {
+  color: black;
+}
+section#contato a {
+  text-decoration: none;
+}
+section#contato a:hover {
+  text-decoration: underline;
+  color: blueviolet;
+  opacity: 0.7;
+
+  /* Trabalhe Conosco */
+}
+section#trabalheConosco {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+}
+ /* Artigos para o Trabalho Conosco */
+article{
+  background-color: rgb(4, 196, 249, 0.732);
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0.4px 0px 8px black;
+}
+
+article form{
+  margin: 20px 0px 20px 0px;
+  /* background-color: #96ff00; */
+  float: left;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  width: 100%;
+  align-items: center;
+}
+article form div.etiqueta{
+  /* background-color: aqua; */
+  width: 30%;
+  float: left;
+  text-align: right;
+  margin: 15px 5px 0px 0px;
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
+article form div.campo{
+  /* background-color: red; */
+  width: 60%;
+  float: left;
+  margin: 5px;
+  align-items: center;
+}
+article form div.campo input, select, textarea {
+padding: 10px;
+width: 200px;
+color: #041C46;
+border: 2px solid #000000;
+border-radius: 5px;
+align-items: center;
+}
+
+article form div.campo input:hover, select:hover, textarea:hover, input:focus, select:focus, textarea:focus{
+border-color: #000000;
+box-shadow: 0px 0px 10px #00eee2;
+background-color: #eefffe;
+font-weight: bold;
+align-items: center;
+}
+
+article form div.campo input.enviar {
+  background-color: #63e6d2;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  align-items: center;
+}
+article form div.campo input[type=checkbox]{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  align-items: center;
+}
+article form div.campo input[type=checkbox]::before{
+position: absolute;
+content: '';
+height: 23px;
+width: 23px;
+border: solid 1px #00eee2;
+background-color: white;
+align-items: center;
+}
+article form div.campo input[type=checkbox]:checked::after{
+  position: absolute;
+  content: '';
+  left: 8px;
+  bottom: 1px;
+  width: 10px;
+  height: 20px;
+  border-right: solid 5px #000000;
+  border-bottom: solid 5px #000000;
+  transform: rotate(45deg);
+}
+
+article form div.campo select{
+width: 230px;
+
+}article form div.campo textarea{
+width: 400px;
+height: 120px;
+line-height: 20px;
+max-width: 400px;
+min-width: 400px;
+max-height: 120px;
+min-height: 120px;
+}
+
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(4, 196, 249, 0.732);
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+footer a:hover {
+  color: blueviolet;
+}
+/* Agora vamos fazer a responsividade do site */
+@media screen and (min-width: 768px) {
+  /* nav */
+
+  nav {
+    height: 70px;
+  }
+  nav div {
+    width: 1000px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  nav div ul {
+    flex-direction: row;
+    width: 60%;
+    align-items: start;
+  }
+  /* Cabeçalho */
+  header {
+    height: 40vh;
+    justify-content: center;
+    /* min-height: 350px; */
+  }
+  header p {
+    max-width: 1000px;
+  }
+  /* Sobre */
+  section#sobre {
+  }
+
+  /* Serviços */
+  section#servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: auto;
+  }
+  section#servicos h2 {
+    width: 100%;
+  }
+  section#servicos div {
+    flex-basis: 160px;
+    padding: 0 10px;
+    flex-grow: 2;
+  }
+  /* Produtos */
+  section#produtos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+  }
+  section#produtos h2 {
+    width: 100%;
+    text-align: center;
+  }
+  section#produtos img {
+    width: 31.333333333333333333%;
+    padding: 10px 0 0 10px;
+  }
+  /* Contato */
+  section#contato {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 600px;
+    justify-content: space-around;
+  }
+  section#contato h2,
+  section#contato p {
+    width: 100%;
+  }
+
+  /* Trabalhe Conosco */
+  section#trabalheConosco {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1000px;
+  }
+}
